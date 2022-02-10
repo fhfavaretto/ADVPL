@@ -2,11 +2,11 @@
 #INCLUDE "Topconn.ch"
 
 /*FUNÇÃO PRINCIPAL / MAIN FUNCTION*/
-User Function TRPROD()
+User Function TRPROD2()
 //VARIAVEIS 
 Private oReport  := Nil //NOTAÇÃO POLONESA
 Private oSecCab	 := Nil
-Private cPerg 	 := "TRPROD" //FICAM ARMAZENADAS NA SX1
+Private cPerg 	 := "XTESTE01" //FICAM ARMAZENADAS NA SX1
 
 //Função responsável por chamar a pergunta criada na função ValidaPerg, 
 //a variável PRIVATE cPerg, é passada.
@@ -44,7 +44,7 @@ Local cAlias := GetNextAlias()
 oSecCab:BeginQuery() //Query começa a ser estruturada no relatório
 	BeginSql Alias cAlias
 		SELECT B1_COD, B1_DESC FROM %table:SB1%
-		WHERE %notDel% and b1_COD >= %exp:MV_CHO% and b1_COD <= %exp:MV_CHO%
+		WHERE %notDel% and b1_COD >= %exp:MV_PAR01% and b1_COD <= %exp:MV_PAR02%
 	EndSql	
 	/*
 	cSQL := "SELECT B1_COD, B1_DESC FROM "+RetsqlName("SB1")
