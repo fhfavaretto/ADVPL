@@ -3,10 +3,11 @@
 
 /*FUNÇÃO PRINCIPAL / MAIN FUNCTION*/
 User Function TRCLIEN()
+
 //VARIAVEIS 
-Private oReport  := Nil //NOTAÇÃO POLONESA
+Private oReport  := Nil 		//NOTAÇÃO POLONESA
 Private oSecCab	 := Nil
-Private cPerg 	 := "TRCLIEN" //FICAM ARMAZENADAS NA SX1
+Private cPerg 	 := "TRCLIEN" 	//FICAM ARMAZENADAS NA SX1
 
 //Função responsável por chamar a pergunta criada na função ValidaPerg, 
 //a variável PRIVATE cPerg, é passada.
@@ -22,7 +23,7 @@ Return
 /*FUNÇÃO RESPONSÁVEL PELA ESTRUTURA DO RELATÓRIO*/
 Static Function ReportDef()
 
-oReport := TReport():New("CLIENTE","Relatório - Clientes",cPerg,{|oReport| PrintReport(oReport)},"Relatório de Clientes")
+oReport := TReport():New("CLIENTE","Relatório - Clientes Ativos",cPerg,{|oReport| PrintReport(oReport)},"Relatório de Clientes")
 
 oReport:SetLandscape(.T.) // SIGNIFICA QUE O RELATÓRIO SERÁ EM PAISAGEM
 
@@ -31,6 +32,10 @@ oSecCab := TRSection():New( oReport , "CLIENTES", {"SQL"} )
 
 TRCell():New( oSecCab, "A1_COD", "SA1") 
 TRCell():New( oSecCab, "A1_NOME", "SA1")
+TRCell():New( oSecCab, " A1_NREDUZ", "SA1")
+TRCell():New( oSecCab, "A1_MUN", "SA1")
+TRCell():New( oSecCab, "A1_CEP", "SA1")
+TRCell():New( oSecCab, "A1_CGC", "SA1")
 
 TRFunction():New(oSecCab:Cell("A1_COD"),,"COUNT",,,,,.F.,.T.,.F.,oSecCab)
 Return 
@@ -43,7 +48,7 @@ Local cAlias := GetNextAlias()
 
 oSecCab:BeginQuery() //Query começa a ser estruturada no relatório
 	BeginSql Alias cAlias
-		SELECT A1_COD, A1_NOME FROM %table:SA1%
+		SELECT A1_COD, A1_NOME, A1_NREDUZ, A1_MUN, A1_CEP, A1_CGC FROM %table:SA1%
 		WHERE %notDel% 
 	EndSql	
 	/*
