@@ -11,5 +11,12 @@
 			"isMultiSession": true,
 			"enableTableSync": true
 		}
-	]
+	],
+	"lastPrograms": [
+		{
+			"label": "SIGAMDI",
+			"description": "<nil>"
+		}
+	],
+	"lastProgramExecuted": "SIGAMDI"
 }
