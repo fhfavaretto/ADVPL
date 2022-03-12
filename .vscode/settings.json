@@ -1,4 +1,25 @@
 {
     "totvsLanguageServer.welcomePage": false,
-    "totvsLanguageServer.askCompileResult": true
+    "totvsLanguageServer.askCompileResult": true,
+    "esp.token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYmlvLmZhdmFyZXR0byIsImlhdCI6MTY0NjkzOTQzNywidHlwZSI6ImNyZWRlbnRpYWwiLCJleHAiOjE2NTQ3MTU0Mzd9.FEij4E6EtHOBcHt_Z2bfmgksC8wKHu6sUL0D0d-Bq0Q",
+    "advpl.compileToken": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdXRoIjoiZGV2ZWxvcG1lbnQiLCJzdWIiOiJmYWJpby5mYXZhcmV0dG8iLCJpYXQiOjE2NDY5Mzk4NzMsImlzcyI6IlRPVFZTIFMuQSIsImV4cCI6MTY0NzU0NDY3M30.xksbFliTXpFEora9YMYNSmmCDxwjD2wPFbUo5Ak4SV4ZlX2GGE1SkFEJe8myA-J8hHubQIJviyXEhTMpzWch06B-pVBv4579OHKANmGOd2Fk1J8JZXb6-JJFTH4vRtXInO7GcKvI46-HH_buAnVITn0Xz3YoaSBLCR0LH-Z5pM-RVPXKNx-mA_cmesuqI6qdUox0yuCo0YP6QLZBJI9kbARqNUDwrW9AlIFK7ZnXTMpNsv7THKOl92ROJ95ICLkSol8_v3o5wNclD8MZltLLGfpzz86TMnzbpkjD3KhCpq2nt6O6gf8Gv-Pc3VW41cHOQtd-y_NDiBq7yN0YZJRzlQ",
+    "advpl.alpha_compile": true,
+    "advpl.environments": [
+        {
+            "smartClientPath": "C:/Users/mdantas/Documents/totvs/bin/smartclient",
+            "name": "PROTHEUS",
+            "environment": "PROTHEUS",
+            "server": "usuario-pc.local",
+            "port": "11019",
+            "user": "Admin",
+            "passwordCipher": "KQvzOoilic9Zn984UvM8CyYdhqQO+O4w2/dNp8fNgCM11y09BIfTaZQRSRx+wjp0AACt4XIvTp6huaHgL8gZnzXS=",
+            "includeList": "c:/AdvplFramework/src/include/;c:/AdvplFramework/src/include-lib/",
+            "language":"PORTUGUESE",
+            "rpoType": "TOP",
+            "serverVersion": "191205P",
+            "ssl": false
+        }]
+
+
 }
+
