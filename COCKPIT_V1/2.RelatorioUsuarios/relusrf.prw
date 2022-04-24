@@ -1,5 +1,3 @@
-//Bibliotecas
-#Include "Protheus.ch"
 #Include "TopConn.ch"
 #Include "Totvs.ch"
 
