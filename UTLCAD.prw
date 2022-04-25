@@ -1,12 +1,14 @@
 #include 'protheus.ch'
 #include 'tbiconn.ch'
 #include 'parmtype.ch'
+#Include "TOTVS.ch"
 
-//documentação
-// https://tdn.totvs.com/display/tec/TButton
+
+
+
 
 User Function UTLCAD()
-Local oDgl1 //variavel que recebera a chamada da classe tDialog
+Local oDgl1 
 local cTituloJanela := "DASBOARD - UPDUO CONSULTORIA"
 local oTButton1   
 local oTButton2   
@@ -25,11 +27,19 @@ local oTButton14
 local oTButton15   
 local oTButton16  
 local oTButton17  
-local oTButton18  
-local oTButton20   
-local oTButton19  
+//local oTButton18  
+//local oTButton20   
+//local oTButton19  
 local oSay1
 local oSay2
+
+U_fDigSenha()
+
+//if !__cUserId=="000001"
+//	MSGALERT("Você não tem privilégios para acessar essa rotina! Contate o Administrado do sistema!", "ATENÇÃO!!!")
+//	Return
+//endif
+
 
 oDgl1 := TDialog():New(0,0,800,1280,cTituloJanela,,,,,CLR_BLACK,CLR_WHITE,,,.T.)
 
@@ -56,12 +66,9 @@ oTButton14 := TButton():New( 120,180,"EXECFUNC",oDgl1,{||U_EXECFUNC()}, 70,20,,,
 oTButton15 := TButton():New( 150,180,"SuperQry",oDgl1,{||U_SuperQry()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )
 oTButton16 := TButton():New( 180,180,"TRANSARQ",oDgl1,{|| U_TRANSARQ()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )
 oTButton17 := TButton():New( 210,180,"APi Cadastro",oDgl1,{|| U_APiemp()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
-oTButton18 := TButton():New( 230,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
-oTButton19 := TButton():New( 250,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
-oTButton20 := TButton():New( 300,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
-
-
-
+//oTButton18 := TButton():New( 230,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
+//oTButton19 := TButton():New( 250,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
+//oTButton20 := TButton():New( 300,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
 
 
 oDgl1:Activate(,,,.T.) // parametro para ativar a tela marcada como .T. para centralizar no meio
@@ -74,7 +81,7 @@ Return
 
 User Function APiemp()
 
-FWAlertSuccess("Gatilho Criado", "Api Ativada")
+FWAlertSuccess("Gatilho Criado, Mashup já disponivel.", "Api Ativada")
 
 //Gatilhos que serão criados ao confirmar api
 aSX7 := {}
@@ -190,8 +197,8 @@ Return
  
 /*---------------------------------------------------------------------*
  | Func:  fSeqSX7                                                      |
- | Autor: Daniel Atilio                                                |
- | Data:  22/09/2015                                                   |
+ | Autor: Fabio Favaretto                                              |
+ | Data:  22/04/2022                                                   |
  | Desc:  Função que pega a próxima sequencia da SX7 conforme campo    |
  *---------------------------------------------------------------------*/
   
@@ -215,6 +222,27 @@ Static Function fSeqSX7(cCampo)
      
     RestArea(aAreaX7)
 Return cSequen
+
+
+
+ 
+/*/{Protheus.doc} User Function zAlert
+Testes com as funções de alerta da FWAlert
+@type  Function
+@author Atilio
+@since 22/11/2020
+@version version
+/*/
+//User Function zAlert()
+//    FWAlertError("Mensagem de erro", "Título FWAlertError")
+//    FWAlertExitPage("Mensagem de navegação de página", "Título FWAlertExitPage")
+//    FWAlertHelp("Mensagem do problema", "Mensagem da solução - FWAlertHelp")
+//    FWAlertInfo("Mensagem informativa", "Título FWAlertInfo")
+//    FWAlertNoYes("Mensagem de pergunta Não / Sim", "Título FWAlertNoYes")
+//    FWAlertSuccess("Mensagem de sucesso", "Título FWAlertSuccess")
+//    FWAlertWarning("Mensagem de aviso", "Título FWAlertWarning")
+//    FWAlertYesNo("Mensagem de pergunta Sim / Não", "Título FWAlertYesNo")
+//Return
 
 
 
