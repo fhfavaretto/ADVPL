@@ -12,3 +12,7 @@ A Fazer
 Projetos Futuros a serem implementados
 [ ] Verificar a possibilidade de criar um script executado via shell para limpeza do protheus_data.
 [ ] Troca a quente de rpo via advpl utilizando da função shellExecute
+
+
+
+PADRÃO NOMECLATURAS

@@ -33,7 +33,6 @@ local oTButton17
 local oSay1
 local oSay2
 
-U_fDigSenha()
 
 //if !__cUserId=="000001"
 //	MSGALERT("Você não tem privilégios para acessar essa rotina! Contate o Administrado do sistema!", "ATENÇÃO!!!")

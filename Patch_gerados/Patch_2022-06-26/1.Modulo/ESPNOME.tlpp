@@ -1,0 +1,6 @@
+#include 'TOTVS.CH'
+
+User Function ESPNOME()
+cRet := "UPDUO - CONSULTORIA" // NOME DO MODULO QUE FICA EM 97  
+
+return cRet
