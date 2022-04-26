@@ -6,7 +6,6 @@
 
 
 
-
 User Function UTLCAD()
 Local oDgl1 
 local cTituloJanela := "DASBOARD - UPDUO CONSULTORIA"
