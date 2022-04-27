@@ -26,7 +26,7 @@ local oTButton14
 local oTButton15   
 local oTButton16  
 local oTButton17  
-//local oTButton18  
+local oTButton18  
 //local oTButton20   
 //local oTButton19  
 local oSay1
@@ -64,7 +64,7 @@ oTButton14 := TButton():New( 120,180,"EXECFUNC",oDgl1,{||U_EXECFUNC()}, 70,20,,,
 oTButton15 := TButton():New( 150,180,"SuperQry",oDgl1,{||U_SuperQry()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )
 oTButton16 := TButton():New( 180,180,"TRANSARQ",oDgl1,{|| U_TRANSARQ()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )
 oTButton17 := TButton():New( 210,180,"APi Cadastro",oDgl1,{|| U_APiemp()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
-//oTButton18 := TButton():New( 230,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
+oTButton18 := TButton():New( 230,180,"ExcSqlArq",oDgl1,{|| ExcSqlArq()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
 //oTButton19 := TButton():New( 250,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
 //oTButton20 := TButton():New( 300,180," ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  
 
