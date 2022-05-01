@@ -1,0 +1,5 @@
+Como habilitar powershell
+https://social.technet.microsoft.com/wiki/pt-br/contents/articles/35641.windows-10-permitir-a-execucao-de-scripts-no-powershell.aspx
+
+Teste o script antes de usar
+www.fbsolutions.com.br
