@@ -16,3 +16,10 @@ Projetos Futuros a serem implementados
 
 
 PADRÃO NOMECLATURAS
+
+
+
+a colocar ainda no cockpit
+
+Painel de log Padrão.
+https://terminaldeinformacao.com/2021/05/26/onde-ficam-as-informacoes-de-log-de-rotinas-do-protheus-tabela-cv8/
