@@ -23,3 +23,7 @@ a colocar ainda no cockpit
 
 Painel de log Padrão.
 https://terminaldeinformacao.com/2021/05/26/onde-ficam-as-informacoes-de-log-de-rotinas-do-protheus-tabela-cv8/
+
+appserver - para logs
+https://centraldeatendimento.totvs.com/hc/pt-br/articles/360021047812-TEC-APPSERVER-Como-configurar-um-servidor-de-logs
+https://tdn.totvs.com/pages/viewpage.action?pageId=203756666
