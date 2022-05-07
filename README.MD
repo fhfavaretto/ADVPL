@@ -1,3 +1,34 @@
+
+```
+                _______      _______  _      
+          /\   |  __ \ \    / /  __ \| |     
+         /  \  | |  | \ \  / /| |__) | |     
+        / /\ \ | |  | |\ \/ / |  ___/| |     
+       / ____ \| |__| | \  /  | |    | |____ 
+      /_/    \_\_____/   \/   |_|    |______|
+                                                                              
+
+```
+
++ O nome dos arquivos ch�s no include estão em letra minuscula?
+     + Exemplo: `#include 'protheus.ch'`, pq? **#linuxthing**
+
++ Respeita o guia de boas pr�ticas desenvolvimento?
+     + [Guia de Boas Praticas - ADVPL](http://tdn.totvs.com.br/pages/viewpage.action?pageId=22480352)
+
++ Efetuou a Tipagem das vari�veis e par�metros?
+     + [Tipagem de Dados](http://tdn.totvs.com.br/display/tec/Tipagem+de+Dados)
+
++ Existe codigo redundante ou duplicado?
+     + Ou seja, tem esta(s) mesma(s) linha(s) em outro lugar no fonte ou no fluxo de execuçao e poderia ser unificado?
+     + Aten��o: n�o deixe gen�rico de forma prematura
+
+ + O codigo possui documentação (novos metodos, funçãoes, classes)
+     + [ProtheusDOC](https://tdn.totvs.com/display/tec/ProtheusDOC)
+    
+
+
+
 1 - Projeto de cockpit para consultores 
 
 A Fazer
