@@ -10,18 +10,18 @@
 
 ```
 
-+ O nome dos arquivos ch�s no include estão em letra minuscula?
-     + Exemplo: `#include 'protheus.ch'`, pq? **#linuxthing**
++ O nome dos arquivos no Fonte estão em letra minuscula?
+     + **#linuxthing**
 
-+ Respeita o guia de boas pr�ticas desenvolvimento?
++ Respeita o guia de boas praticas desenvolvimento?
      + [Guia de Boas Praticas - ADVPL](http://tdn.totvs.com.br/pages/viewpage.action?pageId=22480352)
 
-+ Efetuou a Tipagem das vari�veis e par�metros?
++ Efetuou a Tipagem das variaveis e parametros?
      + [Tipagem de Dados](http://tdn.totvs.com.br/display/tec/Tipagem+de+Dados)
 
 + Existe codigo redundante ou duplicado?
      + Ou seja, tem esta(s) mesma(s) linha(s) em outro lugar no fonte ou no fluxo de execuçao e poderia ser unificado?
-     + Aten��o: n�o deixe gen�rico de forma prematura
+     + Atenção: não deixe genérico de forma prematura
 
  + O codigo possui documentação (novos metodos, funçãoes, classes)
      + [ProtheusDOC](https://tdn.totvs.com/display/tec/ProtheusDOC)
