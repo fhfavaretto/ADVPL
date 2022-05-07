@@ -35,7 +35,7 @@ A Fazer
 
 * [ ]Trocar todos os nomes de funçoes para que não haja conflito nas funçoes ao realizar a criação de patchs
 * [ ]Criar Função que cria parametros via advpl para o afterlogin.
-* [ ]Criar e-mail para envio de moedas cadastradas (Solicitar a upduo um e-mail api@upduo.com.br)
+* [ ]Criar e-mail para envio de moedas cadastradas (Solicitar a upduo um e-mail api@.com.br)
 * [ ]Melhorar Perfomance da api sefaz, para que tenha melhor perfomance ao ser ativada via advpl
 * [ ]Verificar consulta api para transportadoras e demais cadastros que contem um campo de cnpj
 
