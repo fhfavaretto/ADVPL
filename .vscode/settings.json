@@ -6,19 +6,22 @@
     "advpl.alpha_compile": true,
     "advpl.environments": [
         {
-            "smartClientPath": "C:/Users/mdantas/Documents/totvs/bin/smartclient",
-            "name": "PROTHEUS",
-            "environment": "PROTHEUS",
-            "server": "usuario-pc.local",
-            "port": "11019",
+            "smartClientPath": "/Users/fabio.favaretto/Documents/SMARTCLIENT/SERVIDOR.app/Contents/MacOS/smartclient",
+            "name": "Lib-Harpia",
+            "environment": "HARPIA",
+            "server": "192.168.0.2",
+            "port": "1111",
             "user": "Admin",
-            "passwordCipher": "KQvzOoilic9Zn984UvM8CyYdhqQO+O4w2/dNp8fNgCM11y09BIfTaZQRSRx+wjp0AACt4XIvTp6huaHgL8gZnzXS=",
+            "passwordCipher": "FMaYRdLSAinqSIUo5uFk2bxcmht3LNF1o4dFQW7k7Oak2eCLPkpyZVLL5q9r+CQJAACGW5U1CaNXx+QP3pZYwJrn=",
             "includeList": "c:/AdvplFramework/src/include/;c:/AdvplFramework/src/include-lib/",
-            "language":"PORTUGUESE",
+            "language": "PORTUGUESE",
             "rpoType": "TOP",
             "serverVersion": "191205P",
             "ssl": false
-        }]
+        }
+    ],
+    "advpl.selectedEnvironment": "Lib-Harpia",
+    "advpl.projectActive": "ADVPL"
 
 
 }
