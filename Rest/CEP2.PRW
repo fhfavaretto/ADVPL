@@ -1,4 +1,4 @@
-#Include 'Totvs.ch'
+#INCLUDE "protheus.ch"
  
 /*/{Protheus.doc} zViaCep
 
@@ -25,11 +25,11 @@ BAIRRO, CEP, COMPLEMENTO, GIA, IBGE, LOCALIDADE, LOGRADOURO, UF, UNIDADE
  
     Exemplo para chamar em gatilhos do Protheus para preencher o código do municipio por exemplo
     Regra:   u_zViaCep(FwFldGet('A1_CEP'))['ibge']
-    Regra:   u_zViaCep(FwFldGet('A1_CEP'))['cep']
+    Regra:   u_zViaCep(FwFldGet('A1_CEP'))['']
 
  
       @obs : MANUTENÇÕES FEITAS NO CÓDIGO:
-     --------------------------------------------------------------------------------------------                         
+       --------------------------------------------------------------------------------------------                         
      Data: 26/01/2021
      Responsável: Súlivan
      Log: * Retirado o uso da função FWJsonDeserialize que está em deprecate
@@ -42,10 +42,11 @@ User Function zViaCep(cCep)
  
     Local aArea         := GetArea()
     Local aHeader       := {}    
-    Local oRestClient   := FWRest():New("https://viacep.com.br/ws")
+  //Local oRestClient   := FWRest():New("https://viacep.com.br/ws")
+    Local oRestClient   := FWRest():New("https://viacep.com.br")
     Local oJson         := JsonObject():New()
      
-    Default cCep        := ''
+    Default cCep        := '15130009'
  
     fConOut("[U_zViaCep] - Entrou na função que consulta as informações do endereco pelo CEP")
  
@@ -56,8 +57,9 @@ User Function zViaCep(cCep)
     aAdd(aHeader,'Content-Type: application/json; charset=utf-8')
  
     //[GET] Consulta Dados na Api
-    oRestClient:setPath("/"+cCep+"/json/")
-    If oRestClient:Get(aHeader)
+    //oRestClient:setPath("/"+cCep+"/json/")
+      oRestClient:setPath("/ws/"+cCep+"/json/")
+      If oRestClient:Get(aHeader)
           
         oJson:FromJson(oRestClient:CRESULT)          
  
@@ -73,11 +75,12 @@ User Function zViaCep(cCep)
         oJson['ddd']        := Iif( ValType(oJson['ddd'])         != "U", oJson['ddd']        , "")
         oJson['siafi']      := Iif( ValType(oJson['siafi'])       != "U", oJson['siafi']      , "")
  
-        VarInfo("[U_zViaCep] - Resultado da consulta ->",oJson)
+          VarInfo("[U_zViaCep] - Resultado da consulta ->",oJson)
     Else
         fConOut("[U_zViaCep] - ** Erro Api ViaCep: "+oRestClient:GetLastError())
     Endif  
- 
+    
+   alert(m->a1_cep)
    oJson['erro']:=  Iif( ValType(oJson['cep']) == "U", "Api não retornou dados do cep: "+cValTochar(cCep) ,"")      
  
     fConOut("[U_zViaCep] - Finalizou na função que consulta as informações do endereco pelo CEP") 
