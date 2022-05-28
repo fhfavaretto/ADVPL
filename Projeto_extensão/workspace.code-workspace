@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../webservice_Leme"
+		},
+		{
+			"path": "../../FONTES_PRODUCAO"
+		}
+	],
+	"settings": {
+		"totvsLanguageServer.welcomePage": false,
+		"totvsLanguageServer.askCompileResult": true,
+		"advpl.projectActive": "ADVPL",
+		"advpl.environments": [],
+		"advpl.selectedEnvironment": "Selecione o Ambiente"
+	}
+}
