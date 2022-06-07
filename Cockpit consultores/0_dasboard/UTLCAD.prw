@@ -42,7 +42,7 @@ local oSay2
 oDgl1 := TDialog():New(0,0,800,1280,cTituloJanela,,,,,CLR_BLACK,CLR_WHITE,,,.T.)
 
 
-oSay1:= TSay():Create(oDgl1,{||'Relatorios'},10,75,,oFont,,,,.T.,CLR_BLACK,CLR_WHITE,600,60)
+oSay1:= TSay():Create(oDgl1,{||'Relatorios'},10,75,,,,,,.T.,CLR_BLACK,CLR_WHITE,600,60)
 oTButton1 := TButton():New( 30, 50,"Relatorio Vinculo Funcional",oDgl1,{||U_RelUsrF()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  // Relatorio Vinculo Funcional
 oTButton2 := TButton():New( 60, 50,"Relatório de usuários ",oDgl1,{||U_TREPUSER()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )       //Relatório de usuários e seus respectivos acessos.
 oTButton3 := TButton():New( 90, 50,"zReport",oDgl1,{||U_zReport()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )                       // zReport - Criação de usuarios
@@ -56,7 +56,7 @@ oTButton10 := TButton():New(300,50, " ",oDgl1,{|| U_SQLERP()}, 70,20,,,.F.,.T.,.
 
 oTButton8 := TButton():New( 330,115, "ENCERRAR",oDgl1,{|| oDgl1:End()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )
 
-oSay2:= TSay():Create(oDgl1,{||'Rotinas'},10,195,,oFont,,,,.T.,CLR_BLACK,CLR_WHITE,600,60)
+oSay2:= TSay():Create(oDgl1,{||'Rotinas'},10,195,,,,,,.T.,CLR_BLACK,CLR_WHITE,600,60)
 oTButton11 := TButton():New( 30, 180,"CHKTOP",oDgl1,{||U_CFG001()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. )  // Funcao de atualizacao da estrutura das tabelas (CHKTOP)
 oTButton12 := TButton():New( 60, 180,"zAppend",oDgl1,{||U_zAppend()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. ) // Função de Append em bloco de uma base para outra
 oTButton13 := TButton():New( 90, 180,"Ajusta Estoque",oDgl1,{||U_AjEst()}, 70,20,,,.F.,.T.,.F.,,.F.,,,.F. ) //Função de ajuste de estoque
