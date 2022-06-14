@@ -1,4 +1,4 @@
-User Function updopen3()
+User Function pduo()
     Local cModulo 	:= 'SIGAESP' //Nome do Módulo que irá fazer a abertura do Smartclient
 
     MsApp():New(cModulo) //Instancia a aplicação no módulo
